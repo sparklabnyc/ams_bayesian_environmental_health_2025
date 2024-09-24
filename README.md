@@ -1,22 +1,18 @@
-# SHARP: Bayesian Modeling for Environmental Health Workshop
-
-![course logo](assets/bmeh-1200x630.jpg)
+# Quantifying the impact of the environment on health using Bayesian methods
 
 ## Introduction
 
-GitHub repo through which we're developing and sharing materials for the SHARP Bayesian Modeling for Environmental Health Workshop, taking place in person during August 21st-22nd 2024.
+GitHub repo through which we're developing and sharing materials for the workshop on Quantifying the impact of the environment on health using Bayesian methods, taking place in person during Octover 18th and 21st 2024 at Imperial.
 
 ## Notes for attendees
 
 The workshop will be a series of lectures and interactive supervised lab sessions. We hope it's informative and fun!
 
-We will be using `Posit (RStudio) Cloud`, which assumes knowledge of `R` and `RStudio`. We will also ask you to pull the final versions of the `GitHub` repo to your Cloud account. The basics of doing this are in a previously-created guide found via [another guide repo](https://github.com/rmp15/rstudio_cloud_tutorial/tree/main).
-
 This workshop is largely written in [`NIMBLE`](https://r-nimble.org/).
 
 Below is the set of labs to follow throughout the two days:
 
-### Day 1 (August 21st 2024)
+### Day 1 (October 18th 2024)
 
 | Time         | Activity                 |
 | ------------ | ------------------------ |
@@ -37,7 +33,7 @@ Below is the set of labs to follow throughout the two days:
 | 4:00  - 4:45 | [Hierarchical Modelling](/labs/hierarchical_modelling/hierarchical_modelling.qmd) (Hands-on Lab) |
 | 4:45  - 5:00 | Questions and Wrap-up |
 
-### Day 2 (August 22nd 2024)
+### Day 2 (October 21st 2024)
 
 | Time         | Activity                 |
 | ------------ | ------------------------ |
@@ -57,14 +53,6 @@ Below is the set of labs to follow throughout the two days:
 | 5:00 - 5:15 | Questions and Wrap-up |
 
 ## Notes for those working on the repo
-
-### Using `pre-commit`
-
-Run `pre-commit install` to install the hooks. You now won't be able to commit until you pass the hooks. These (among other things) automatically format files and prevent us from committing ugly code. For more details, see the main [docs](https://pre-commit.com/) and the `R` [docs](https://lorenzwalthert.github.io/precommit/).
-
-### Using `renv`
-
-`renv` maintains consistency between users' `R` environments. Run `renv::restore()` and the environment will be downloaded into the repository based on the `renv.lock` file. If you want to add a packages to the lockfile, install the package and then run `renv::snapshot()`. For more details, see the [docs](https://rstudio.github.io/renv/articles/renv.html).
 
 ### Using `Quarto` for presentations
 
