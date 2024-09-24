@@ -1,9 +1,11 @@
 ---
 title: "Software Options"
-subtitle: "SHARP Bayesian Modeling for Environmental Health Workshop"
-author: "Theo Rashid"
-date: "August 22 2024"
+subtitle: "Quantifying the impact of the environment on health using Bayesian methods"
+author: "Garyfallos Konstantinoudis, Theo Rashid"
+date: "October 21 2024"
 format: html
+execute: 
+  warning: false
 ---
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}

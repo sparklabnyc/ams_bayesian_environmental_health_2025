@@ -1,11 +1,11 @@
 ---
-title: "Bayesian Model(l)ing for Environmental Health"
+title: "Quantifying the impact of the environment on health using Bayesian methods"
 subtitle: "Welcome and Introduction"
 author:
  - name: ""
    email: ""
 institute: ""
-date: 2024-08-21
+date: 2024-10-18
 date-format: medium
 title-slide-attributes:
   data-background-color: "#f3f4f4"
@@ -28,16 +28,14 @@ format:
 
 ## Logistics {.smaller}
 
-- __Wi-Fi__ Network: guest-net (no password). Open any webpage (i.e. BBC News, Amazon, etc.) on your browser, a pop-up will appear to connect to guest Wi-Fi. Accept terms to gain access.
-- __Restrooms__. Directly outside the classroom.
-- __Course materials__. All Material (lectures/labs) is located on Posit Cloud. You were invited to the ‘sharp_bayesian_environmental_health_2024’ Workspace via email on Tuesday 19th August.
-- __Name tags__. Please wear during workshop to make connecting with others easier! Please return after the Workshop to help us be greener.
-- Contact Meaghan Doherty __914-522-8114__ for assistance
+- __Wi-Fi__ Network: eduroam, imperial.
+- __Restrooms__. 
+- __Course materials__. All Material (lectures/labs) is located on github (https://github.com/gkonstantinoudis/ic_bayesian_environmental_health_2024)
 
 ## Overview of workshop {.bigger}
 
 ::: {style="font-size: 130%;"}
-The __Bayesian Modeling for Environmental Health Workshop__ is a two-day intensive course of seminars and hands-on analytical sessions to provide an _approachable_ and _practical_ overview of __concepts__, __techniques__, and __data analysis methods__ used in Bayesian modeling with applications in Environmental Health.
+The __Quantifying the impact of the environment on health using Bayesian methods__ course is  a two-day course adapted from the __SHARP Workshop__ given at Columbia.  It consists of seminars and hands-on analytical sessions to provide an _approachable_ and _practical_ overview of __concepts__, __techniques__, and __data analysis methods__ used in Bayesian modelling with applications in Environmental Health.
 :::
 
 ## Overview of workshop {.smaller}
@@ -63,11 +61,7 @@ The __Bayesian Modeling for Environmental Health Workshop__ is a two-day intensi
 
 ![](assets/instructor.png)
 
-## 13 US States + 1 country
-
-![](assets/attendee_map.png)
-
-## Day 1 (August 21st 2024)
+## Day 1 (October 18th 2024)
 
 ::: {style="font-size: 50%;"}
 
@@ -92,7 +86,7 @@ The __Bayesian Modeling for Environmental Health Workshop__ is a two-day intensi
 
 :::
 
-## Day 2 (August 22nd 2024)
+## Day 2 (October 21st 2024)
 
 ::: {style="font-size: 50%;"}
 
@@ -117,60 +111,7 @@ The __Bayesian Modeling for Environmental Health Workshop__ is a two-day intensi
 
 ## What is your experience level with R? {.smaller}
 
-```{r}
-# Load packages
-library(tidyverse)
-library(hrbrthemes)
-
-# Load dataset
-df <- read_csv("assets/experience_level_r.csv") |>
-  mutate(experience_level = as.factor(experience_level)) |>
-  mutate(experience_level = fct_relevel(experience_level, c("Beginner/little experience", "Some limited experience", "Extensive experience")))
-
-# Plot
-p <- ggplot(df, aes(x = experience_level)) +
-  geom_bar() +
-  xlab("Experience level with R") +
-  theme_ipsum()
-
-plot(p)
-```
-
-## What does a 50% chance of rain mean to you? {.smaller}
-
-- given the data used to generate prediction, there is equal likelihood of raining and not raining. Also it means I’ll be bringing my umbrella.
-- I am definitely not a meteorologist but our snow forecasters tell us its a combination of % described catchment area and confidence that any given area in that catchment will receive precipitation
-- There is a 50% chance that rain will occur in the allotted time period
-- I'm not a meteorologist, but I assume it means there is a 50% likelihood that any location within the forecast area will experience rain during the forecast period. It might also mean that rain will cover 50% of the forecasted region/area.
-- If you were to stay in one location, there is a 50% likelihood that you will experience rain. If you were to travel around local areas, 50% of those areas will likely experience rain.
-
-## What does a 50% chance of rain mean to you? {.smaller}
-
-- based on previous data with similar starting weather conditions, 50% of those instances resulted in rain
-- Have not actually given it too much thought before. Beyond it being just as likely to rain and not rain... I think it means that there is 100% chance that 50% of the area covered will get rain or for 100% of the area considered, 50% chance there will be rain? Combination of area covered and predicted likelihood, I think?
-- There is a 0.5 probability that it will rain.
-- 50% of locations in a predicted area will rain (?)
-- In the area where the forecast model is being run, 50% of the pixels are predicted to experience rain.
-
-## What does a 50% chance of rain mean to you? {.smaller}
-
-- That it is equally likely to rain as it is to not rain.
-- 50% of the time it will rain and 50% of the time it will not.
-- there is an equal likelihood of rain occurring or not occurring
-- 1 out 2 chance that it will rain.
-- There is a 50% chance it will rain.
-
-## What does a 50% chance of rain mean to you? {.smaller}
-
-- There is a 50% chance of rain occurring in the reporting area
-- a 50 percent chance for any one spot in the forecast area to get wet during the forecast period
-- For the region, there is a half and half chance that some point within the area will see rain.
-- 50/100 days with the same or similar conditions had rain, which means that today there is a 50/100 chance of there being any rain
-- There is an equal chance that it will rain versus not rain
-
-## What does a 50% chance of rain mean to you? {.smaller}
-
-- Met Office (UK): A 50% chance of rain represents a 5 in 10 chance that rain will fall at some point during that period.
+## What do you understand from a 95% Confidence Interval (CI)?{.smaller}
 
 ## What do you understand from a 95% Confidence Interval (CI)?{.smaller}
 
@@ -215,12 +156,5 @@ plot(p)
 <!-- - Frequentist framework: “There is an 95% probability that when computing a confidence interval from data of this sort, the effect falls within this range”. -->
 <!-- - Bayesian framework allows us to say “given the observed data, the effect has 95% probability of falling within this range”. -->
 
-## Logistics {.smaller}
-
-- __Wi-Fi__ Network: guest-net (no password). Open any webpage (i.e. BBC News, Amazon, etc.) on your browser, a pop-up will appear to connect to guest Wi-Fi. Accept terms to gain access.
-- __Restrooms__. Directly outside the classroom (women on the left, men on the right)
-- __Course materials__. All Material (lectures/labs) is located on Posit Cloud. You were invited to the ‘sharp_bayesian_environmental_health_2023’ Workspace via email on Sunday 8/12.
-- __Name tags__. Please wear during workshop to make connecting with others easier! Please return after the Workshop to help us be greener.
-- Contact Meaghan Doherty __914-522-8114__ for assistance
 
 # Questions?

@@ -2,10 +2,10 @@
 title: "Software Options for Bayesian Modelling"
 subtitle: "Should we still use WinBugs?"
 author:
- - name: "Theo Rashid"
+ - name: "Garyfallos Konstantinoudis, Theo Rashid"
    email: "theo.rashid15@imperial.ac.uk"
 institute: "Imperial College London"
-date: 2024-08-22
+date: 2024-10-21
 date-format: medium
 title-slide-attributes:
   data-background-color: "#f3f4f4"

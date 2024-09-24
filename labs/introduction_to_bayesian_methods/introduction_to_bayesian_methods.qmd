@@ -1,9 +1,11 @@
 ---
 title: "Introduction to Bayesian Methods"
-subtitle: "SHARP Bayesian Modeling for Environmental Health Workshop"
+subtitle: "Quantifying the impact of the environment on health using Bayesian methods"
 author: "Robbie M. Parks, Theo Rashid"
-date: "August 21 2024"
+date: "October 18 2024"
 format: html
+execute: 
+  warning: false
 ---
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}

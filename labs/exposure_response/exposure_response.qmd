@@ -1,12 +1,14 @@
 ---
 title: "Exposure Response Modelling"
-subtitle: "SHARP Bayesian Modeling for Environmental Health Workshop"
+subtitle: "Quantifying the impact of the environment on health using Bayesian methods"
 author: "Robbie M. Parks, Garyfallos Konstantinoudis"
-date: "August 22 2024"
+date: "October 21 2024"
 format: html
 editor:
   markdown:
     wrap: sentence
+execute: 
+  warning: false
 ---
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}

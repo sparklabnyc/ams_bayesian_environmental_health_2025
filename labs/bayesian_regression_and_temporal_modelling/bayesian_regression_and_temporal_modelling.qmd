@@ -1,9 +1,11 @@
 ---
 title: "Bayesian Regression and Temporal modelling"
-subtitle: "SHARP Bayesian Modeling for Environmental Health Workshop"
+subtitle: "Quantifying the impact of the environment on health using Bayesian methods"
 author: "Robbie M. Parks, Theo Rashid"
-date: "August 21 2024"
+date: "October 18 2024"
 format: html
+execute: 
+  warning: false
 ---
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
@@ -699,10 +701,6 @@ linear_month_temp_fit |>
   geom_histogram()
 ```
 
-What does the summary of the monthly temperature terms look like?
-```{r}
-mcmc_intervals(nimbleMCMC_samples_week_random_walk_with_temperature_by_month, regex_pars = c("beta_temperature")) + coord_flip()
-```
 
 ## Closing remarks
 

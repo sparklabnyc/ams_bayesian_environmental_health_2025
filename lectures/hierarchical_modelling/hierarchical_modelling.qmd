@@ -5,7 +5,7 @@ author:
  - name: "Elizaveta Semenova, Robbie M. Parks"
    email: "elizaveta.p.semenova@gmail.com"
 institute: "Computer Science Department, University of Oxford"
-date: 2024-08-21
+date: 2024-10-18
 date-format: medium
 title-slide-attributes:
   data-background-color: "#f3f4f4"

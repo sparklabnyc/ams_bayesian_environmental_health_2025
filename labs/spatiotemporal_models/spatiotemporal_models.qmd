@@ -1,9 +1,11 @@
 ---
 title: "Spatial and Spatio-temporal Modelling"
-subtitle: "SHARP Bayesian Modeling for Environmental Health Workshop"
+subtitle: "Quantifying the impact of the environment on health using Bayesian methods"
 author: "Garyfallos Konstantinoudis"
-date: "August 22 2024"
+date: "October 21 2024"
 format: html
+execute: 
+  warning: false
 ---
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}

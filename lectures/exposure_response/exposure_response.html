@@ -26,7 +26,7 @@
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
       width: 0.8em;
-      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
     /* CSS for syntax highlighting */
@@ -106,11 +106,11 @@
 
   .callout {
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 1em;  
     border-radius: .25rem;
   }
 
-  .callout.callout-style-simple {
+  .callout.callout-style-simple { 
     padding: 0em 0.5em;
     border-left: solid #acacac .3rem;
     border-right: solid 1px silver;
@@ -161,7 +161,7 @@
     margin-top: 0.5em;
     margin-bottom: 0.5em;
   }
-
+    
   .callout.callout-titled.callout-style-simple .callout-content  p {
     margin-top: 0;
   }
@@ -212,7 +212,7 @@
   .callout-title {
     display: flex
   }
-
+    
   .callout-icon::before {
     margin-top: 1rem;
     padding-right: .5rem;
@@ -324,12 +324,12 @@
     }
     .reveal .footnotes ol {
       counter-reset: ol;
-      list-style-type: none;
+      list-style-type: none; 
       margin-left: 0;
     }
     .reveal .footnotes ol li:before {
       counter-increment: ol;
-      content: counter(ol) ". ";
+      content: counter(ol) ". "; 
     }
     .reveal .footnotes ol li > p:first-child {
       display: inline-block;
@@ -371,19 +371,19 @@
     .reveal .slide > img.r-stretch.quarto-figure-center {
       display: block;
       margin-left: auto;
-      margin-right: auto;
+      margin-right: auto; 
     }
     .reveal .slide > img.stretch.quarto-figure-left,
     .reveal .slide > img.r-stretch.quarto-figure-left  {
       display: block;
       margin-left: 0;
-      margin-right: auto;
+      margin-right: auto; 
     }
     .reveal .slide > img.stretch.quarto-figure-right,
     .reveal .slide > img.r-stretch.quarto-figure-right  {
       display: block;
       margin-left: auto;
-      margin-right: 0;
+      margin-right: 0; 
     }
   </style>
 </head>
@@ -397,7 +397,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Garyfallos Konstantinoudis
+Garyfallos Konstantinoudis 
 </div>
 <div class="quarto-title-author-email">
 <a href="mailto:g.konstantinoudis@imperial.ac.uk">g.konstantinoudis@imperial.ac.uk</a>
@@ -408,7 +408,7 @@ Garyfallos Konstantinoudis
     </div>
 </div>
 
-  <p class="date">Aug 22, 2024</p>
+  <p class="date">Oct 21, 2024</p>
 </section>
 <section id="a-clarification" class="slide level2" style="font-size: 90%;">
 <h2>A clarification</h2>
@@ -568,6 +568,10 @@ Garyfallos Konstantinoudis
 </ul>
 
 <img data-src="Figures/splinesExample.png" class="r-stretch quarto-figure-center"></section>
+<section id="piecewise-constant-splines" class="slide level2">
+<h2>Piecewise constant (splines?)</h2>
+
+<img data-src="exposure_response_files/figure-revealjs/unnamed-chunk-13-1.png" width="960" class="r-stretch"></section>
 <section id="piecewise-linear-splines" class="slide level2">
 <h2>Piecewise Linear Splines</h2>
 <ul>
@@ -594,10 +598,29 @@ Y_i &amp;= \beta_0^{(5)} + \beta_1^{(5)}x + \epsilon_i \qquad x\geq3\\
 <section id="linear-splines-in-r" class="slide level2">
 <h2>Linear splines in R</h2>
 <ul>
-<li>You can use the <code>bs()</code> function in R to define the basis function: <code>bs(x, degree = 3, knots = c(-1, 0.5, 1.5, 3))</code> and plot the result:</li>
+<li>You can use the <code>bs()</code> function in R to define the basis function:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">bs</span>(dat<span class="sc">$</span>x, <span class="at">degree =</span> <span class="dv">1</span>, <span class="at">knots =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="fl">0.5</span>, <span class="fl">1.5</span>, <span class="dv">3</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>  <span class="fu">head</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>             1          2         3 4 5
+[1,] 0.7273541 0.27264593 0.0000000 0 0
+[2,] 0.3156038 0.68439625 0.0000000 0 0
+[3,] 0.7731419 0.00000000 0.0000000 0 0
+[4,] 0.8407311 0.00000000 0.0000000 0 0
+[5,] 0.0000000 0.32151084 0.6784892 0 0
+[6,] 0.9561009 0.04389912 0.0000000 0 0</code></pre>
+</div>
+</div>
+</section>
+<section id="linear-splines-in-r-1" class="slide level2">
+<h2>Linear splines in R</h2>
+<ul>
+<li>And plot the result:</li>
 </ul>
 
-<img data-src="exposure_response_files/figure-revealjs/unnamed-chunk-13-1.png" width="960" class="r-stretch quarto-figure-center"></section>
+<img data-src="exposure_response_files/figure-revealjs/unnamed-chunk-15-1.png" width="960" class="r-stretch quarto-figure-center"></section>
 <section id="cubic-splines" class="slide level2" style="font-size: 80%;">
 <h2>Cubic splines</h2>
 <p>Similarly we can define higher order polynomial splines, for instance:</p>
@@ -620,14 +643,12 @@ Y_i = \beta_0 &amp; + \beta_1 x +\beta_2 x^2 + \beta_3 x_3 + \\
 <section id="cubic-splines-1" class="slide level2" style="font-size: 80%;">
 <h2>Cubic splines</h2>
 <ul>
-<li>Similar as before: <code>bs(x, degree = 3, knots = c(-1, 0.5, 1.5, 3))</code>:</li>
+<li>Similar as before:</li>
+<li><code>bs(x, degree = 3, knots = c(-1, 0.5, 1.5, 3))</code>:</li>
 </ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>fit_c <span class="ot">&lt;-</span> <span class="fu">lm</span>(y <span class="sc">~</span> <span class="fu">bs</span>(x, <span class="at">degree =</span> <span class="dv">3</span>, <span class="at">knots =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="fl">0.5</span>, <span class="fl">1.5</span>, <span class="dv">3</span>)), <span class="at">data =</span> dat)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
 <p>without the splines package:</p>
 
-<img data-src="exposure_response_files/figure-revealjs/unnamed-chunk-16-1.png" width="960" class="r-stretch quarto-figure-center"></section>
+<img data-src="exposure_response_files/figure-revealjs/unnamed-chunk-18-1.png" width="960" class="r-stretch quarto-figure-center"></section>
 <section id="splines-1" class="slide level2" style="font-size: 80%;">
 <h2>Splines</h2>
 <p>A spline of order n is a piecewise polynomial function of degree <span class="math inline">\(n-1\)</span> in a variable <span class="math inline">\(x\)</span>.</p>
@@ -654,29 +675,30 @@ Y_i = \beta_0 &amp; + \beta_1 x +\beta_2 x^2 + \beta_3 x_3 + \\
 <section id="natural-cubic-splines-in-r" class="slide level2" style="font-size: 90%;">
 <h2>Natural cubic splines in R</h2>
 <ul>
-<li>To define natural cubic splines in R: <code>ns(x, knots = c(-1, 0.5, 1.5, 3)):</code></li>
+<li>To define natural cubic splines in R:</li>
+<li><code>ns(x, knots = c(-1, 0.5, 1.5, 3)):</code></li>
 </ul>
 
-<img data-src="exposure_response_files/figure-revealjs/unnamed-chunk-17-1.png" width="960" class="r-stretch quarto-figure-center"></section>
+<img data-src="exposure_response_files/figure-revealjs/unnamed-chunk-19-1.png" width="960" class="r-stretch quarto-figure-center"></section>
 <section id="well-better-fit-be-achieved-with-more-knots" class="slide level2" style="font-size: 90%;">
 <h2>Well, better fit be achieved with more knots</h2>
 <ul>
 <li><code>ns(x, df = 10)</code></li>
 </ul>
 
-<img data-src="exposure_response_files/figure-revealjs/unnamed-chunk-18-1.png" width="960" class="r-stretch quarto-figure-center"></section>
+<img data-src="exposure_response_files/figure-revealjs/unnamed-chunk-20-1.png" width="960" class="r-stretch quarto-figure-center"></section>
 <section id="and-more" class="slide level2" style="font-size: 90%;">
 <h2>… and more</h2>
 
-<img data-src="exposure_response_files/figure-revealjs/unnamed-chunk-19-1.png" width="960" class="r-stretch quarto-figure-center"></section>
+<img data-src="exposure_response_files/figure-revealjs/unnamed-chunk-21-1.png" width="960" class="r-stretch quarto-figure-center"></section>
 <section id="and-more-1" class="slide level2" style="font-size: 90%;">
 <h2>… and more</h2>
 
-<img data-src="exposure_response_files/figure-revealjs/unnamed-chunk-20-1.png" width="960" class="r-stretch quarto-figure-center"></section>
+<img data-src="exposure_response_files/figure-revealjs/unnamed-chunk-22-1.png" width="960" class="r-stretch quarto-figure-center"></section>
 <section id="and-more-2" class="slide level2" style="font-size: 90%;">
 <h2>… and more</h2>
 
-<img data-src="exposure_response_files/figure-revealjs/unnamed-chunk-21-1.png" width="960" class="r-stretch quarto-figure-center"><p>is this a useful model?</p>
+<img data-src="exposure_response_files/figure-revealjs/unnamed-chunk-23-1.png" width="960" class="r-stretch quarto-figure-center"><p>is this a useful model?</p>
 </section>
 <section id="gaussian-priors" class="slide level2">
 <h2>Gaussian priors</h2>
@@ -692,11 +714,11 @@ Y_i = \beta_0 &amp; + \beta_1 x +\beta_2 x^2 + \beta_3 x_3 + \\
 <section id="random-walk-of-order-2-strong-prior" class="slide level2">
 <h2>Random walk of order 2 (strong prior)</h2>
 
-<img data-src="exposure_response_files/figure-revealjs/unnamed-chunk-22-1.png" width="960" class="r-stretch quarto-figure-center"></section>
+<img data-src="exposure_response_files/figure-revealjs/unnamed-chunk-24-1.png" width="960" class="r-stretch quarto-figure-center"></section>
 <section id="random-walk-of-order-2-vague-prior" class="slide level2">
 <h2>Random walk of order 2 (vague prior)</h2>
 
-<img data-src="exposure_response_files/figure-revealjs/unnamed-chunk-23-1.png" width="960" class="r-stretch quarto-figure-center"></section>
+<img data-src="exposure_response_files/figure-revealjs/unnamed-chunk-25-1.png" width="960" class="r-stretch quarto-figure-center"></section>
 <section id="example-mortality-and-temperature-in-italy" class="slide level2">
 <h2>Example: Mortality and temperature in Italy</h2>
 <div class="columns">
@@ -709,7 +731,7 @@ Y_i = \beta_0 &amp; + \beta_1 x +\beta_2 x^2 + \beta_3 x_3 + \\
 </div><div class="column" style="width:50%;">
 <div class="cell">
 <div class="cell-output-display">
-<p><img data-src="exposure_response_files/figure-revealjs/unnamed-chunk-24-1.png" width="672"></p>
+<p><img data-src="exposure_response_files/figure-revealjs/unnamed-chunk-26-1.png" width="672"></p>
 </div>
 </div>
 </div>
@@ -721,7 +743,7 @@ Y_i = \beta_0 &amp; + \beta_1 x +\beta_2 x^2 + \beta_3 x_3 + \\
 <li>Fit a linear, a categorical and a random walk model for capturing the effect of temperature.</li>
 </ul>
 
-<img data-src="exposure_response_files/figure-revealjs/unnamed-chunk-25-1.png" width="1152" class="r-stretch quarto-figure-center"></section>
+<img data-src="exposure_response_files/figure-revealjs/unnamed-chunk-27-1.png" width="1152" class="r-stretch quarto-figure-center"></section>
 <section id="extensions" class="slide level2">
 <h2>Extensions</h2>
 <ul>
@@ -761,7 +783,7 @@ Y_i = \beta_0 &amp; + \beta_1 x +\beta_2 x^2 + \beta_3 x_3 + \\
   <script src="exposure_response_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
   <script src="exposure_response_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
   <script src="exposure_response_files/libs/revealjs/plugin/quarto-support/support.js"></script>
-
+  
 
   <script src="exposure_response_files/libs/revealjs/plugin/notes/notes.js"></script>
   <script src="exposure_response_files/libs/revealjs/plugin/search/search.js"></script>
@@ -784,7 +806,7 @@ Y_i = \beta_0 &amp; + \beta_1 x +\beta_2 x^2 + \beta_3 x_3 + \\
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'chalkboard': {"buttons":false,"preview-links":"auto"},
 'smaller': false,
-
+ 
         // Display controls in the bottom right corner
         controls: false,
 
@@ -962,7 +984,7 @@ Y_i = \beta_0 &amp; + \beta_1 x +\beta_2 x^2 + \beta_3 x_3 + \\
         ]
       });
     </script>
-
+    
     <script>
       // htmlwidgets need to know to resize themselves when slides are shown/hidden.
       // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
@@ -1019,14 +1041,14 @@ Y_i = \beta_0 &amp; + \beta_1 x +\beta_2 x^2 + \beta_3 x_3 + \\
           toggleBodyColorMode(bsSheetEl);
         }
       }
-      toggleBodyColorPrimary();
+      toggleBodyColorPrimary();  
       const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
       tabsets.forEach(function(tabset) {
         const tabby = new Tabby('#' + tabset.id);
       });
       const isCodeAnnotation = (el) => {
         for (const clz of el.classList) {
-          if (clz.startsWith('code-annotation-')) {
+          if (clz.startsWith('code-annotation-')) {                     
             return true;
           }
         }
@@ -1057,11 +1079,11 @@ Y_i = \beta_0 &amp; + \beta_1 x +\beta_2 x^2 + \beta_3 x_3 + \\
           button.setAttribute("data-bs-toggle", "tooltip");
           button.setAttribute("data-bs-placement", "left");
           button.setAttribute("data-bs-title", "Copied!");
-          tooltip = new bootstrap.Tooltip(button,
-            { trigger: "manual",
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
               customClass: "code-copy-button-tooltip",
               offset: [0, -8]});
-          tooltip.show();
+          tooltip.show();    
         }
         setTimeout(function() {
           if (tooltip) {
@@ -1093,7 +1115,7 @@ Y_i = \beta_0 &amp; + \beta_1 x +\beta_2 x^2 + \beta_3 x_3 + \\
         };
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
-        window.tippy(el, config);
+        window.tippy(el, config); 
       }
       const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
       for (var i=0; i<noterefs.length; i++) {
@@ -1146,6 +1168,6 @@ Y_i = \beta_0 &amp; + \beta_1 x +\beta_2 x^2 + \beta_3 x_3 + \\
       }
     });
     </script>
-
+    
 
 </body></html>
