@@ -21,7 +21,7 @@ if (("INLA" %in% installed.packages()) == F) {
 
 # # install packages:
 # list.of.packages <- c(
-#   "here", "tidyverse", "bayesplot", "posterior", "hrbrthemes",
+#   "here", "tidyverse", "bayesplot", "posterior", "hrbrthemes","sf", "spdep", 
 #   "colorspace", "readr", "ggplot2", "rgeos", "patchwork",
 #   "coda", "ggmcmc", "lubridate", "fastDummies", "nimble"
 # )
