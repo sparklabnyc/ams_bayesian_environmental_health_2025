@@ -18,8 +18,8 @@ Below is the set of labs to follow throughout the day:
 
 | Time         | Activity                 |
 | ------------ | ------------------------ |
-| 7:45 - 8:00  | Check in and Breakfast   |
-| 8:00 - 8:15  | [Welcome and Introduction](/lectures/welcome_and_introduction/welcome_and_introduction.qmd) |
+| 07:45 - 08:00  | Check in and Breakfast   |
+| 08:00 - 08:15  | [Welcome and Introduction](/lectures/welcome_and_introduction/welcome_and_introduction.qmd) |
 | 08:15 - 09:00 | [Introduction to Bayesian Methods](/lectures/introduction_to_bayesian_methods/introduction_to_bayesian_methods.qmd) (Lecture) |
 | 09:00 - 09:45 | [Introduction to Bayesian Methods](/labs/introduction_to_bayesian_methods/introduction_to_bayesian_methods.qmd) (Hands-on Lab) |
 | 09:45 - 10:00 | Break |
