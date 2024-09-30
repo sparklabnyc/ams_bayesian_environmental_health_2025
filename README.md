@@ -2,7 +2,7 @@
 
 ## Introduction
 
-GitHub repo through which we're developing and sharing materials for the workshop on Introduction to Bayesian Methods for Environmental Health and Beyond, taking place in person during January 12th 2025 at AMS.
+GitHub repo through which we're developing and sharing materials for the workshop on Introduction to Bayesian Methods for Environmental Health and Beyond, taking place in person during January 12th, 8:00 AM - 3:30 PM, 2025 at AMS in New Orleans.
 
 ## Notes for attendees
 
