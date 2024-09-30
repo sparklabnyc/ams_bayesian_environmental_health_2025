@@ -12,12 +12,12 @@ This workshop is largely written in [`NIMBLE`](https://r-nimble.org/).
 
 Below is the set of labs to follow throughout the day:
 
-### Day 1 (January 12th 2025)
+### January 12th 2025
 
 | Time         | Activity                 |
 | ------------ | ------------------------ |
-| 8:30 - 9:00  | Check in and Breakfast   |
-| 9:00 - 9:15  | [Welcome and Introduction](/lectures/welcome_and_introduction/welcome_and_introduction.qmd) |
+| 7:45 - 8:00  | Check in and Breakfast   |
+| 8:00 - 8:15  | [Welcome and Introduction](/lectures/welcome_and_introduction/welcome_and_introduction.qmd) |
 | 9:15 - 10:00 | [Introduction to Bayesian Methods](/lectures/introduction_to_bayesian_methods/introduction_to_bayesian_methods.qmd) (Lecture) |
 | 10:00  - 10:15 | Break / One-on-one questions
 | 10:15  - 11:00 | [Introduction to Bayesian Methods](/labs/introduction_to_bayesian_methods/introduction_to_bayesian_methods.qmd) (Hands-on Lab) |
