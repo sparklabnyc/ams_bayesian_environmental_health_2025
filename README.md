@@ -1,8 +1,8 @@
-# Quantifying the impact of the environment on health using Bayesian methods
+# Introduction to Bayesian Methods for Environmental Health and Beyond
 
 ## Introduction
 
-GitHub repo through which we're developing and sharing materials for the workshop on Quantifying the impact of the environment on health using Bayesian methods, taking place in person during Octover 18th and 21st 2024 at Imperial.
+GitHub repo through which we're developing and sharing materials for the workshop on Introduction to Bayesian Methods for Environmental Health and Beyond, taking place in person during January 12th 2025 at AMS.
 
 ## Notes for attendees
 
@@ -10,9 +10,9 @@ The workshop will be a series of lectures and interactive supervised lab session
 
 This workshop is largely written in [`NIMBLE`](https://r-nimble.org/).
 
-Below is the set of labs to follow throughout the two days:
+Below is the set of labs to follow throughout the day:
 
-### Day 1 (October 18th 2024)
+### Day 1 (January 12th 2025)
 
 | Time         | Activity                 |
 | ------------ | ------------------------ |
