@@ -26,11 +26,11 @@ Below is the set of labs to follow throughout the day:
 | 10:00 - 10:45 | [Hierarchical Modeling](/lectures/hierarchical_modelling/hierarchical_modelling.qmd) (Lecture) |
 | 10:45 - 11:30 | [Hierarchical Modelling](/labs/hierarchical_modelling/hierarchical_modelling.qmd) (Hands-on Lab) |
 | 11:30  - 12:15 | Networking lunch |
-| 12:15 - 13:00 | [Spatial and Spatio-temporal Modeling](/lectures/spatiotemporal_models/sstmodels.qmd) (Lecture) |
-| 13:00 - 13:45 | [Spatial and Spatio-temporal Modelling](/labs/spatiotemporal_models/spatiotemporal_models.qmd) (Hands-on Lab) |
+| 12:15 - 13:00 | [Exposure-response modelling](lectures/exposure_response/exposure_response.qmd) (Lecture) |
+| 13:00 - 13:45 | [Exposure-response modelling](/labs/exposure_response/exposure_response.qmd) (Hands-on Lab) |
 | 13:45 - 14:00 | Break |
-| 14:00 - 14:45 | [Exposure-response modelling](lectures/exposure_response/exposure_response.qmd) (Lecture) |
-| 14:45 - 15:30 | [Exposure-response modelling](/labs/exposure_response/exposure_response.qmd) (Hands-on Lab) |
+| 14:00 - 14:45 | [Spatial and Spatio-temporal Modeling](/lectures/spatiotemporal_models/sstmodels.qmd) (Lecture) |
+| 14:45 - 15:30 | [Spatial and Spatio-temporal Modelling](/labs/spatiotemporal_models/spatiotemporal_models.qmd) (Hands-on Lab) |
 
 ## Notes for those working on the repo
 
